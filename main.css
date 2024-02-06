@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Mid;
+    src: url(./Assets/Font/Mediocrity-Regular.ttf);
+}
+
+
+* {
+    font-family: Mid;
+}
