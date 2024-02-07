@@ -2,8 +2,26 @@
     font-family: Mid;
     src: url(./Assets/Font/Mediocrity-Regular.ttf);
 }
-
+body {
+    margin: 0;
+}
 
 * {
-    font-family: Mid;
+    box-sizing: border-box;
+}
+
+.pagewrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.left{
+    width: 75vw;
+    padding: 1em;
+}
+
+.right {
+    width: 25vw;
+    background-color: lightgray;
+    padding: 1em;
 }
