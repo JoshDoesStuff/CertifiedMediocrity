@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
 </head>
+
 <body>
     <div class="pagewrapper">
 
@@ -14,10 +16,17 @@
             <section class="theTextThatDoesNotChange">
                 <h1>coongraptulashions ! !!! !</h1>
                 <h2> <span id="nameOutput" class="visible"></span> Is Mediocre In:</h2>
+                <h3><span id="info"></span></h3>
+                <section class="what">
+                    <section class="date">
+                        <h4><span id="skillIssue"></span></h4>
+                        <h4><span id="theDate"></h4>
+                    </section>
+                </section>
             </section>
             <div class="certificate " id="certificate" class="funniFont">
-                
-                <span id="info"></span>
+                <!-- This exists here because everything breaks if it doesnt -->
+
             </div>
 
         </section>
@@ -25,20 +34,22 @@
         <section class="right">
 
             <form action="" id="myForm">
-    
+
                 <input type="text" name="name" id="name" placeholder="Name">
-        
+
                 <select name="type" id="type">
-                    <option value="A">Programming</option>
-                    <option value="B">Life</option>
-                    <option value="C">Making Decisions 	&#40;Good or Bad I Don't Care&#41;</option>
-                    <option value="D">Following Instructions</option>
+                    <option value="Programming">Programming</option>
+                    <option value="Life">Life</option>
+                    <option value="Skill Issue">Skill Issue</option>
+                    <option value="Original Ideas">Coming Up With Original Ideas</option>
                 </select>
                 <input type="submit" value="Eh, It's good enough" id="button">
-        
+                <input type="submit" value="Print it and regret everything" id="print">
+
             </form>
         </section>
 
-    </div>    
+    </div>
 </body>
+
 </html>

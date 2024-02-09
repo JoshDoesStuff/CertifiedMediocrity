@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     // check for buttons exist
-    if ( document.querySelectorAll('.button') !== null) {
+    if (document.querySelectorAll('.button') !== null) {
         let buttons = document.querySelectorAll('.button');
         buttons.forEach(button => button.addEventListener('click', processForm))
     }
@@ -36,42 +36,54 @@ document.addEventListener("DOMContentLoaded", function () {
         //update certificate information when form is submitted:
         let nameOutput = document.getElementById('nameOutput');
         let info = document.getElementById('info');
+        let skillIssue = document.getElementById('skillIssue')
         nameOutput.innerText = formData.name;
+        skillIssue.innerText = 'Skill Issue Achieved On:'
         info.innerText = formData.type;
-        rngMoment
+        
 
-      });
+        //generateDate
+        let theDate = new Date().toLocaleDateString('en-us', { weekday: "long", year:"numeric", month: "numeric", day: "numeric"})
+        let dateBox = document.getElementById('theDate')
+        dateBox.innerText = theDate
+
+    });
     // Log readiness to console
     console.log("Ready");
 
     // let info = document.getElementById('info');
     // info.classList.add('test');
-    
-    
-    
+
+    if (document.getElementById('print') !== null) {
+        let printElement = document.getElementById('print')
+        printElement.addEventListener('click' , function(eventData) {
+          window.open('https://www.google.com/search?q=how+to+take+and+print+a+screenshot' ,'_blank')
+        })
+    }
+
     // certificate.classList.add('number1');
-    
-    function changeCert(value){
+
+    function changeCert(value) {
         let certificate = document.getElementById('certificate');
         certificate.classList = ""; // clear classes on each function call
         if (rndInt === 3) {
             console.log('sorry was hungry')
         } else {
-        switch(value){
-            case 'A':
-                certificate.classList.add('number1');
-            break;
-            case 'B':
-                certificate.classList.add('number2');
-            break;
-            case 'C':
-                certificate.classList.add('number3');
-            break;
-            case 'D':
-                certificate.classList.add('number4');
-            break;
+            switch (value) {
+                case 'A':
+                    certificate.classList.add('number1');
+                    break;
+                case 'B':
+                    certificate.classList.add('number2');
+                    break;
+                case 'C':
+                    certificate.classList.add('number3');
+                    break;
+                case 'D':
+                    certificate.classList.add('number4');
+                    break;
+            }
         }
-    }
     }
 });
 
@@ -82,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-function processForm(form){
+function processForm(form) {
 
 }
 
