@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (document.getElementById('print') !== null) {
         let printElement = document.getElementById('print')
         printElement.addEventListener('click' , function(eventData) {
-          window.open('https://www.google.com/search?q=how+to+take+and+print+a+screenshot' ,'_blank')
+          window.print();
         })
     }
 
